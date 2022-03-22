@@ -8,21 +8,17 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 
-nav{
-    height: 4em;
-}
 
 ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    margin: 0px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 li{ 
     padding: 10px;
-    float: right;
-    margin-right: 5px;
+    margin: 0px 5px;
 }
 
 li#subscribe{
@@ -30,27 +26,30 @@ li#subscribe{
     border-radius: 3px;
     font-weight: bold;
 }
-
+    
 
 article#container-noticia-principal {
-    height: 20em;
-    width: 80em;
-    margin-left: 10em;
-    margin-top: 5em;
+    width: 80vw;
+    margin: 10vh auto;
+    display: flex;
 }
 
 article#noticia-principal{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     font-size: 1.6em;
     line-height: 1.6em;
 }
 
 #noticia-principal > h1{
+    margin: 0;
     font-size: 1.5em;
 }
 
-#artigo-principal{
-    width: 16em;
-    height: 11em;
+#imagem-artigo-principal{
+    width: 28em;
+    height: 21em;
     margin-right: 3em;
     float: left;
 }
@@ -59,8 +58,8 @@ article#noticia-principal{
 
 .about{
     font-size: 0.6em;
-    line-height: 1.2;
-    margin-top: 20px;
+    line-height: 1.2em;
+
 }
 
 
@@ -69,64 +68,39 @@ article img#about{
     height: 3.7em;
     float: left;
     margin-right: 1em;
-    margin-top: -10px;
-}
 
-
-article.container-noticia{
-    width: 18em;
-}
-
-article.container-noticia > h1{
-    font-size: 2em;
-    margin: 0;
-}
-
-article.container-noticia img{
-    width: 10em;
-    height:10em;
 }
 
 section.artigos-secundarios{
-    width: 80%;
-    height: 50%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    margin-left: 9vw;
+    margin-right: 10vw;
+    margin-top: 2em;
+    margin-bottom: 2em;
     font-size: 1.3em;
+    display: flex;
+    flex-flow: row wrap;
 }
 
-article#noticia-1{
-    float: left;
+.container-sec{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin: 15px 15px;
 }
 
-article#noticia-2{
-    margin: 0 auto;
-}
 
-article#noticia-3{
-    float: right;
-    margin-top: -22.56em;
-}
-
-#noticia-sec-1{
-    width: 18em;
-    height: 10em;    
-}
-
-#noticia-sec-2{
-    width: 18em;
-    height: 10em;    
-}
-
-#noticia-sec-3{
+article .imagens{
     width: 18em;
     height: 10em;
 }
 
+article.container-sec > h1{
+    font-size: 2em;
+    margin: 0;
+}
+
 footer{
-    padding-top: 1.5em;
+    margin-top: 1.5em;
     text-align: center;
 }
 
